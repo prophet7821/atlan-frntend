@@ -26,7 +26,7 @@ const Table = ({ data }) => {
   console.log(rows);
 
   return (
-    <Grid container justifyContent="center" xl={12} lg={12} md={12} sm={12} xs={12} sx={{ height: 600 }}>
+    <Grid item justifyContent="center" xl={12} lg={12} md={12} sm={12} xs={12} sx={{ height: 600 }}>
       <DataGrid
         rows={rows}
         columns={columns}
