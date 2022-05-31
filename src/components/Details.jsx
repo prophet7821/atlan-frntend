@@ -51,7 +51,7 @@ const Details = () => {
       </ul>
 
       <Typography variant="h6" gutterBottom component="h3">
-        ordercategories
+        orderCategories
       </Typography>
       <ul>
         <li>categoryId</li>
@@ -64,7 +64,7 @@ const Details = () => {
       </Typography>
       <ul>
         <li>productID</li>
-        <li>cproductName</li>
+        <li>productName</li>
         <li>supplierID</li>
         <li>categoryID</li>
         <li>quantityPerUnit</li>
