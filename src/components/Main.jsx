@@ -15,7 +15,7 @@ const Main = () => {
     });
   }, [query]);
 
-  console.log(data);
+  //console.log(data);
 
   return (
     <Grid container direction="row" justifyContent="center">

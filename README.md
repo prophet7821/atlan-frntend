@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# SQL Query Runner 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web application run SQL queries on some tables stored in a cloud database.
 
-## Available Scripts
+This project is bootstrapped with Create-React-App. The entire project has three brief , yet different sections.
 
-In the project directory, you can run:
+1.> FrontEnd - The frontend is built using React Library. Styling Components such as Material UI and http client frameworks such as Axios.FrontEnd application takes the SQL query as an input and passes it to the server and recieves the SQL table as an response.That table is then rendered onto the window using Material UI's DataGrid component.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2.> Backend - The backend is built using Express . Cors package has been implemented in the server side , to prevent errors due to strict cors policy.  Due to some recent breaking changes in the webpack 5.0 release , Sequelize could not be implemented directly onto frontend and hence has to be filtered through a express server.The Server recieves the SQL query and throws it to the Sequelize package which returns the resultant table in form of JSON , which is then sent to the frontend.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3.> Database - The database is a MySQL database whic is hosted onto the web using Clever Cloud Database Services.
 
-### `npm test`
+# Scripts 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm start` -- Starts the Application in development mode. Run the script in your terminal and visit https://localhost:3000/ to view your application.
 
-### `npm run build`
+# Frameworks
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`Material UI` -- Material UI offers comprehensive range of production-ready UI components which gives great styling options to the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`axios` -- Axios provides a promise based http client for web applications and node js development. It makes fetch requests easier to handle .
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`Sequelize` -- Sequelize is an open-source Node. js module that enables JavaScript developers to work with relational databases more easily, including but limited to MySQL, Postgres , Redis. Sequelize has been implemented in the server-side , and not on the client side , due to some breaking changes in the webpack 5.x framework.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Loading Speed Test 
+ According to SpeedLabs (https://www.browserstack.com/speedlab). The website scores a 98 on 100 in mobile and a 75 on 100 in desktop.
+ A full report could be seen here : https://www.browserstack.com/speedlab/report/a0e21ef79dea479389a844cc460145f88158363a
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ # Links
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ Live: - FrontEnd : - https://atlan-frntend.vercel.app/
+         BackEnd  : - https://atlanserver.herokuapp.com/runQ?query=`query`
+Source Code - FrontEnd - https://github.com/prophet7821/atlan-frntend
+              BackEnd  -  https://github.com/prophet7821/Atlan_Server

@@ -13,7 +13,7 @@ const Table = ({ data }) => {
     columns.push({ field: key, headerName: key, width: 300 });
   });
 
-  console.log(columns);
+  //console.log(columns);
 
   const rows = [];
 
@@ -23,7 +23,7 @@ const Table = ({ data }) => {
     count += 1;
   });
 
-  console.log(rows);
+  //console.log(rows);
 
   return (
     <Grid item justifyContent="center" xl={12} lg={12} md={12} sm={12} xs={12} sx={{ height: 600 }}>
